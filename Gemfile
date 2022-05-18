@@ -11,6 +11,13 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+gem 'tzinfo-data'
+
+# Workaround for Jekyll serve failure on Ruby 3.0+
+gem "webrick"
+
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 
