@@ -1,0 +1,24 @@
+---
+layout: archive
+collection: research
+title: "Security-Aware Physical Design"
+permalink: /research/secure_physical
+author_profile: true
+---
+
+Recent research has demonstrated that contactless probing, a common IC test and evaluation technique, can be used to extract keys from a circuit even when tamper-proof memory elements are used. This form of physical attack represents a fundamental shift in the hardware security threat model for design obfuscation, which largely considered such physical attacks to be out-of-scope. These physical attack vectors enable cryptographic keys stored in hardware can be compromised with sufficient reverse engineering. Hence, any security scheme that uses on-chip keys could be compromised. These physical attacks are unique because they exploit the physical design (i.e. layout, placement, routing, etc.) of a circuit to compromise security. In order to protect our critical infrastructure and military technology from these novel security threats, we must fundamentally shift our view of supply-chain security to secure an IC's physical design. This opens the door to a new generation of research to rethink the nature of design obfuscation through the lens of physical design. These open questions span topics ranging from developing mathematical models for a physical attacker, to exploring novel attack strategies that exploit physical leakage, to developing security-aware physical design automation algorithms. Our work in this space develops rigorous theoretical models for contactless-probing-based attackers to infer secret keys, opening the door to securing the physical design of the next generation of ICs.
+
+<style>
+figure {
+    display: block;
+}
+figure figcaption {
+    font-size: 18px;
+    text-align: center;
+}
+</style>
+
+<figure>
+<center><img src="/images/eofm_ex.png" alt="Contactless probing example." style="max-width:300px"></center>
+<figcaption>Overview of contactless probing, a common technique for IC reverse engineering and failure analysis.</figcaption>
+</figure>

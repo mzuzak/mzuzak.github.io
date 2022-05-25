@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor in the Department of Computer Engineering at the Rochester Institute of Technology (RIT). My research centers on hardware security with an emphasis on provably secure system design and design automation algorithms. Prior to my academic career, I researched high-frequency, wide-band digital signal processing system architecture at the U.S. Naval Research Laboratory where I served as the laed digital designer for a currently-fielded naval system. I have been recognized as an ARCS Scholar, a Future Faculty Fellow, and an Edison Memorial Graduate Fellow. My research has led to more than 20 publications, two of which have been nominated for Best Paper, including most recently at the 2021 Design Automation Conference (DAC). I received my PhD in Electrical Engineering from the University of Maryland in 2022 under the advising of  <a href="https://srivastava.umd.edu/">Prof. Ankur Srivastava</a>.
+I am an Assistant Professor in the Department of Computer Engineering at the Rochester Institute of Technology (RIT). My research centers on hardware security with an emphasis on provably secure system design and design automation algorithms. Prior to my academic career, I researched high-frequency, wide-band digital signal processing system architecture at the U.S. Naval Research Laboratory where I served as the lead digital designer for a currently-fielded naval system. I have been recognized as an ARCS Scholar, a Future Faculty Fellow, and an Edison Memorial Graduate Fellow. My research has led to more than 20 publications, two of which have been nominated for Best Paper, including most recently at the 2021 Design Automation Conference (DAC). I received my PhD in Electrical Engineering from the University of Maryland, College Park in 2022.
 
 Research Focus
 ------
@@ -21,4 +21,4 @@ My research centers on the design of secure, trustworthy, and reliable electroni
 Prospective Students
 ------
 
-<b>I am always looking to recruit and support highly motivated graduate students.</b> If you are interested in working with me on high-impact problems in hardware security, please email me with your resume. If you are currently an undergraduate student at RIT interested in hardware security research, please feel free to reach out to me as well.
+<b>I am always looking to recruit and support highly motivated students!</b> If you are interested in working with me on high-impact problems in hardware security, please email me your resume. If you are currently an undergraduate student at RIT interested in hardware security research, please feel free to reach out to me as well.
