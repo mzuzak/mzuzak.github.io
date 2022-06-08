@@ -77,7 +77,7 @@ tr:nth-child(even) {
     <td>Reviewer for ACM Journal on Emerging Technologies in Computing Systems (JETC)</td>
   </tr>
   <tr>
-    <td>Reviewer for SpringerNature Analog Integrated Circuits and Signal Processing</td>
+    <td>Reviewer for Springer Analog Integrated Circuits and Signal Processing</td>
   </tr>
   <tr>
     <td>Reviewer for 2021 IEEE/ACM International Symposium on Microarchitecture (MICRO)</td>
