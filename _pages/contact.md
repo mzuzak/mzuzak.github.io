@@ -19,7 +19,3 @@ figure {
     display: block;
 }
 </style>
-
-<figure>
-<center><img src="/images/banner-2.jpg" alt="Michael Zuzak at UMD'22." style="max-width:800px"></center>
-</figure>
