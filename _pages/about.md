@@ -30,5 +30,5 @@ Prospective Students
 <b>I am always looking to recruit and support highly motivated students!</b> If you are interested in working with me on high-impact problems in hardware security, please email me your resume. If you are currently an undergraduate student at RIT interested in hardware security research, please reach out to me as well.
 
 <figure>
-<center><img src="/images/banner-1.jpg" alt="Michael Zuzak at CSAW'19." style="max-width:800px"></center>
+<center><img src="/images/banner-2.jpg" alt="Michael Zuzak at UMD'22." style="max-width:800px"></center>
 </figure>
