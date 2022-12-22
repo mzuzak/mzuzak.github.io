@@ -69,24 +69,43 @@ tr:nth-child(even) {
 
 <h2>Service</h2>
 
+<h3>Chair/Co-Chair:</h3>
+
 <table>
   <tr>
-    <td>Reviewer for IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)</td>
-  </tr>
-  <tr>
-    <td>Reviewer for ACM Journal on Emerging Technologies in Computing Systems (JETC)</td>
-  </tr>
-  <tr>
-    <td>Reviewer for Springer Analog Integrated Circuits and Signal Processing</td>
-  </tr>
-  <tr>
-    <td>Reviewer for 2021 IEEE/ACM International Symposium on Microarchitecture (MICRO)</td>
-  </tr>
-  <tr>
-    <td>Reviewer for 2021 IEEE/ACM Design Automation Conference (DAC)</td>
-  </tr>
-  <tr>
-    <td>Reviwer for 2020 IEEE International Symposium on Circuits and Systems (ISCAS)</td>
+    <td>Co-Chair for 2023 ACM Student Research Competition at ICCAD (SRC@ICCAD’23) </td>
   </tr>
 </table>
+  
+<h3>Reviewer:</h3>
+
+<table>
+  <tr>
+    <td>IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)</td>
+  </tr>
+  <tr>
+    <td>ACM Journal on Emerging Technologies in Computing Systems (JETC)</td>
+  </tr>
+  <tr>
+    <td>Springer Analog Integrated Circuits and Signal Processing</td>
+  </tr>
+  <tr>
+    <td>2021 IEEE/ACM International Symposium on Microarchitecture (MICRO)</td>
+  </tr>
+  <tr>
+    <td>2021 IEEE/ACM Design Automation Conference (DAC)</td>
+  </tr>
+  <tr>
+    <td>2020 IEEE International Symposium on Circuits and Systems (ISCAS)</td>
+  </tr>
+</table>
+
+<h3>Judge:</h3>
+
+<table>
+  <tr>
+    <td>2022 ACM Student Research Competition at ICCAD (SRC@ICCAD’22) </td>
+  </tr>
+</table>
+
 </body>
