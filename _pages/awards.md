@@ -41,6 +41,8 @@ tr:nth-child(even) {
 <table>
   <tr>
     <td>TPC Member for 2023 Great Lakes Symposium on VLSI (GLSVLSI) </td>
+  </tr>
+  <tr>
     <td>TPC Member for 2023 IEEE International System-on-Chip Conference (SOCC) </td>
   </tr>
 </table>
