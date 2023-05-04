@@ -58,7 +58,7 @@ tr:nth-child(even) {
     <td>ACM Journal on Emerging Technologies in Computing Systems (JETC)</td>
   </tr>
   <tr>  
-    <td> Springer Journal of Cryptographic Engineering (JCEN)
+    <td> Springer Journal of Cryptographic Engineering (JCEN)</td>
   </tr>  
   <tr>
     <td>Springer Analog Integrated Circuits and Signal Processing</td>
