@@ -98,7 +98,7 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <td>"Machine Learning and Hardware Security: A Winning Combo!", at the Great Lakes Symposium on VLSI (GLSVLSI) (Organizers: A. Rezaei, M. Zuzak, K. Shamsi, and P. Beerel)</td>
+    <td>"Machine Learning and Hardware Security: A Winning Combo!", at the Great Lakes Symposium on VLSI (GLSVLSI) -- Organizers: A. Rezaei, M. Zuzak, K. Shamsi, and P. Beerel</td>
   </tr>
 </table>
 
