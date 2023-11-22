@@ -40,6 +40,12 @@ tr:nth-child(even) {
 
 <table>
   <tr>
+    <td> 2024 IEEE/ACM Design Automation Conference (DAC) </td>
+  </tr>
+  <tr>
+    <td> 2024 Hardware Oriented Security and Trust (HOST)</td>
+  </tr>
+  <tr>
     <td>2023 Great Lakes Symposium on VLSI (GLSVLSI) </td>
   </tr>
   <tr>
@@ -55,16 +61,16 @@ tr:nth-child(even) {
   
 <table>
   <tr>
-    <td>IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)</td>
+    <td>IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD) - 2020, 2021, 2023</td>
   </tr>
   <tr>
-    <td>ACM Journal on Emerging Technologies in Computing Systems (JETC)</td>
+    <td>ACM Journal on Emerging Technologies in Computing Systems (JETC) - 2023 </td>
   </tr>
-  <tr>  
-    <td> Springer Journal of Cryptographic Engineering (JCEN)</td>
-  </tr>  
+    <tr>
+    <td>Springer Journal of Cryptographic Engineering (JCEN) - 2023 </td>
+  </tr>
   <tr>
-    <td>Springer Analog Integrated Circuits and Signal Processing</td>
+    <td>Springer Analog Integrated Circuits and Signal Processing - 2022 </td>
   </tr>
 </table>
 
@@ -72,6 +78,9 @@ tr:nth-child(even) {
 <h3>Conference Sub-Reviewer:</h3>
 
 <table>
+  <tr>
+    <td> 2024 Design, Automation and Test in Europe Conference (DATE)</td>
+  </tr>
   <tr>
     <td> 2023 IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS)</td>
   </tr>
