@@ -1,0 +1,11 @@
+---
+title: "CMPE361: Introduction to Hardware Security"
+collection: teaching
+type: "Undergraduate"
+permalink: /teaching/361-rit
+venue: "Rochester Institue of Technology"
+semester: "Fall 2023"
+location: "Rochester, NY"
+---
+
+The objective of this course is to build the knowledge and skills necessary to design, evaluate, and implement secure hardware systems. Course topics will span the fundamentals of hardware security and trust, which may include security principles and properties, encryption/decryption, side-channel attacks, hardware manufacture and test, physically uncloneable functions (PUF), true random number generation, hardware trojan detection, secure system design, and trusted execution environments. Laboratory assignments and projects facilitate the hands-on learning of course topics including cryptographic hardware design, side-channel attacks, integrated circuit test and verification, PUFs, true random number generation, and secure system design using a field programmable gate array (FPGA) and an embedded processor as an implementation platform.
