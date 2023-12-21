@@ -29,8 +29,45 @@ Prospective Students
 
 <b>I am always looking to recruit and support highly motivated students!</b> If you are interested in working with me on high-impact problems in hardware security, please email me your resume. If you are currently an undergraduate student at RIT interested in hardware security research, please reach out to me as well.
 
-Thanks to Our Sponsors
+Thanks to Our Sponsors!
 ------
+
+<style>
+* {
+   box-sizing: border-box;
+}
+h1 {
+   text-align: center;
+}
+.outer-grid {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+.inner-grid {
+   flex: 25%;
+   max-width: 100%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+}
+@media screen and (max-width: 1275px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 400px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+</style>
 
 <div class="outer-grid">
 	<div class="inner-grid">
