@@ -23,12 +23,6 @@ Research Focus
 
 My research centers on the design of secure, trustworthy, and reliable electronic systems with an emphasis on hardware security, design automation, and artificial intelligence. Currently, I am working to address the security ramifications of outsourcing integrated circuit (IC) fabrication to untrusted manufacturing facilities. Such outsourcing enables companies to obtain high-end performance at a modest cost, but exposes the entire design of an IC to potentially malicious facilities, raising concerns of intellectual property (IP) piracy, reverse engineering, and malicious hardware modification. My work in this domain uniquely explores solutions with a focus on provable, system-level security guarantees, ranging from security-aware design automation algorithms that optimally construct architectures to the theoretical modeling of hardware security guarantees. At the core of all of my work is the use of deep and rigorous mathematical analysis and modeling.
 
-
-Prospective Students
-------
-
-<b>I am always looking to recruit and support highly motivated students!</b> If you are interested in working with me on high-impact problems in hardware security, please email me your resume. If you are currently an undergraduate student at RIT interested in hardware security research, please reach out to me as well.
-
 Thanks to Our Sponsors!
 ------
 
