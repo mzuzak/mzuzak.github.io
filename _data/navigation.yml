@@ -14,9 +14,6 @@ main:
 
   - title: "Awards and Service"
     url: /awards/
-
-  - title: "Prospective Students"
-    url: /students/
     
   - title: "CV"
     url: /cv/
