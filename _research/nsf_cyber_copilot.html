@@ -6,16 +6,6 @@ permalink: /research/nsf_cyber_copilot
 author_profile: true
 ---
 
-<br>
-<h2 align="left">About:</h2>
-Creating robust and comprehensive cybersecurity solutions has become increasingly costly and time consuming due to the ever-expanding list of vulnerabilities to be considered and new attacks found continuously. On the other hand, security research quite often only focuses on a specific attack or even sub-components of it with a narrow scope. These constraints severely limit the opportunity in creating holistic, cross-disciplinary cybersecurity solutions. This project aims to develop a learner-centered co-pilot tool leveraging advances in artificial intelligence (AI) to produce attack scenarios and capture related data, which includes end-to-end attack interactions between the red team attacker and the cyber systems. The resulting high-quality and structured attack artifact repository will be a highly valuable resource to the cyber security research community, especially for the test and validation of security solutions.<br/><br/>This project adopts large language model (LLM) to help cybersecurity research. Through an LLM adaptation approach, the red-team co-pilot will incorporate techniques such as prompt engineering, reasoning, parameter-efficient fine-tuning, and few-shot learning to guide users to emulate attack scenarios. The project will develop a curator-friendly methodology to enable the crowd-sourced aggregation of high-quality cyberattack artifacts associated with attack behaviors and system settings, when the tool is deployed in the research community. The captured dataset contains both functional and behavioral aspects of attacks such as tactics, techniques, and procedures. A successful research outcome, including the tools generated, can help facilitate security benchmarking, AI-based penetration testing, adversarial modeling, and research reproducibility. In addition, the red-team co-pilot brings a useful tool to cyber security education and workforce development since it offers an accessible, adaptive, reusable, and learner-centric platform for users to emulate attacks and develop cyber defense experiences.<br/>
-
-<h2 align="left">Publications:</h2>
-
-<h2 align="left">Open-Source Tooling:</h2>
-
-
-<h2 align="left">Thank you to our sponsor!</h2>
 
 <style>
 * {
@@ -53,6 +43,36 @@ h1 {
    }
 }
 </style>
+
+<br>
+<h2 align="left">About:</h2>
+Creating robust and comprehensive cybersecurity solutions has become increasingly costly and time consuming due to the ever-expanding list of vulnerabilities to be considered and new attacks found continuously. On the other hand, security research quite often only focuses on a specific attack or even sub-components of it with a narrow scope. These constraints severely limit the opportunity in creating holistic, cross-disciplinary cybersecurity solutions. This project aims to develop a learner-centered co-pilot tool leveraging advances in artificial intelligence (AI) to produce attack scenarios and capture related data, which includes end-to-end attack interactions between the red team attacker and the cyber systems. The resulting high-quality and structured attack artifact repository will be a highly valuable resource to the cyber security research community, especially for the test and validation of security solutions.<br/><br/>This project adopts large language model (LLM) to help cybersecurity research. Through an LLM adaptation approach, the red-team co-pilot will incorporate techniques such as prompt engineering, reasoning, parameter-efficient fine-tuning, and few-shot learning to guide users to emulate attack scenarios. The project will develop a curator-friendly methodology to enable the crowd-sourced aggregation of high-quality cyberattack artifacts associated with attack behaviors and system settings, when the tool is deployed in the research community. The captured dataset contains both functional and behavioral aspects of attacks such as tactics, techniques, and procedures. A successful research outcome, including the tools generated, can help facilitate security benchmarking, AI-based penetration testing, adversarial modeling, and research reproducibility. In addition, the red-team co-pilot brings a useful tool to cyber security education and workforce development since it offers an accessible, adaptive, reusable, and learner-centric platform for users to emulate attacks and develop cyber defense experiences.<br/>
+
+<div class="outer-grid">
+	<div class="inner-grid">
+			<img src="/images/cyber_copilot.png"/>
+	</div>
+</div>
+
+<h2 align="left">Publications:</h2>
+
+<ul>
+   <li> <a href="https://mzuzak.github.io/files/proverag_arxiv.pdf"> Fayyazi, Reza, et al. "ProveRAG: Provenance-Driven Vulnerability Analysis with Automated Retrieval-Augmented LLMs." arXiv preprint arXiv:2410.17406 (2024). </a></li>
+</ul>
+
+<h2 align="left">Open-Source Tooling:</h2>
+
+<h3 align="left">Preliminary STT-Based Red-Team Co-Pilot:</h3>
+An automated penetration testing co-pilot capable of guiding a learner through Hack-The-Box cybersecurity workforce development challenges. Automated LLM-based penetration testing tools rely heavily on self-guided reasoning, often resulting in hallucinated or inefficient actions. To address this, we developed a Structured Task Tree (STT) reasoning mechanism grounded in the MITRE ATT&CK Matrix, enabling LLMs to follow a deterministic attack progression rather than generating tasks autonomously.<ul>
+   <li> <a href="https://github.com/KatsuNK/stt-reasoning"> Open-Source Co-Pilot </a></li>
+</ul>
+
+<h3 align="left">Provenance-Driven Vulnerability Analysis with Automated Retrieval-Augmented LLMs (ProveRAG):</h3>
+ProveRAG is an LLM-powered framework that emulates an analyst’s approach to vulnerability analysis while self-critiquing its own responses with evidence. It serves as an evaluation metric to quantify the accuracy of LLMs related to cybersecurity vulnerability analyisis tasks. By integrating a summarizing retrieval technique of up-to-date web data and a self-critique mechanism, ProveRAG reveals and alleviates the omission and hallucination problem of state-of-the-art LLMs.<ul>
+   <li> <a href="https://github.com/RezzFayyazi/ProveRAG"> ProveRAG Framework </a></li>
+</ul>
+
+<h2 align="left">Thank you to our sponsor!</h2>
 
 <div class="outer-grid">
 	<div class="inner-grid">
