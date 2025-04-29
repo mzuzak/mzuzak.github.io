@@ -20,15 +20,18 @@ h1 {
    flex-wrap: wrap;
    padding: 0 4px;
 }
-.inner-grid {
-   flex: 25%;
-   max-width: 67%;
-   padding: 0 4px;
+.inner-grid{
+    flex: 0 1 25%;
+    max-width: 67%;
+    padding: 0 4px;
+    display: flex;             
+    justify-content: center;   
 }
-.inner-grid img {
-   margin-top: 8px;
-   width: 67%;
-   padding: 10px;
+
+.inner-grid img{
+    width: 67%;
+    padding: 10px;
+    margin-top: 8px;
 }
 @media screen and (max-width: 400px) {
    .inner-grid {
