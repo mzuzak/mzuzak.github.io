@@ -1,218 +1,213 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Towards Crowd Sourced Artifact Curation for Cyberattacks Through a Learner Centered AI Co-Pilot</title>
-  <meta name="description" content="NSF funded project developing a learner centered AI co-pilot to help crowd source end to end cyberattack records with behavioral data for research and workforce development." />
+---
+layout: archive
+collection: research
+title: "<center>Towards Crowd-Sourced Artifact Curation for Cyberattacks through a Learner-Centered AI Co-Pilot</center>"
+permalink: /research/nsf_cyber_copilot
+author_profile: true
+---
 
-  <style>
-    :root{
-      --bg:#ffffff;
-      --panel:#fbfbfc;
-      --panel2:#f3f6fb;
-      --text:#111111;
-      --muted:#444b57;
-      --line:#e6e8ee;
-      --accent:#0b57d0;
-      --radius:14px;
-      --shadow:0 10px 24px rgba(12, 20, 33, 0.08);
-      --max:980px;
-    }
+<style>
+  #nsf-cyber-copilot{
+    --bg:#ffffff;
+    --panel:#fbfbfc;
+    --panel2:#f3f6fb;
+    --text:#111111;
+    --muted:#444b57;
+    --line:#e6e8ee;
+    --accent:#0b57d0;
+    --radius:14px;
+    --shadow:0 10px 24px rgba(12, 20, 33, 0.08);
+    --max:980px;
 
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      line-height:1.58;
-    }
+    color:var(--text);
+    font-family:system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    line-height:1.58;
+  }
 
-    .skip-link{
-      position:absolute;
-      left:-999px;
-      top:0;
-      background:#000;
-      color:#fff;
-      padding:10px 12px;
-      border-radius:10px;
-      z-index:1000;
-    }
-    .skip-link:focus{ left:12px; top:12px; }
+  #nsf-cyber-copilot *{ box-sizing:border-box; }
 
-    header, main{
-      width:min(var(--max), 92vw);
-      margin:0 auto;
-    }
+  #nsf-cyber-copilot .skip-link{
+    position:absolute;
+    left:-999px;
+    top:0;
+    background:#000;
+    color:#fff;
+    padding:10px 12px;
+    border-radius:10px;
+    z-index:1000;
+  }
+  #nsf-cyber-copilot .skip-link:focus{ left:12px; top:12px; }
 
-    header{ padding:32px 0 18px; }
+  #nsf-cyber-copilot .wrap{
+    width:min(var(--max), 92vw);
+    margin:0 auto;
+  }
 
-    .hero{
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:
-        radial-gradient(900px 240px at 15% 0%, rgba(11,87,208,0.10), transparent 60%),
-        radial-gradient(800px 240px at 85% 0%, rgba(21,101,192,0.08), transparent 60%),
-        var(--panel);
-      box-shadow:var(--shadow);
-      padding:22px 20px;
-    }
+  #nsf-cyber-copilot .hero{
+    margin:20px auto 0;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:
+      radial-gradient(900px 240px at 15% 0%, rgba(11,87,208,0.10), transparent 60%),
+      radial-gradient(800px 240px at 85% 0%, rgba(21,101,192,0.08), transparent 60%),
+      var(--panel);
+    box-shadow:var(--shadow);
+    padding:22px 20px;
+  }
 
-    h1{
-      margin:0 0 8px;
-      font-size:clamp(1.55rem, 3.6vw, 2.15rem);
-      font-weight:760;
-      text-align:center;
-      letter-spacing:0;
-    }
+  #nsf-cyber-copilot h1{
+    margin:0 0 8px;
+    font-size:clamp(1.55rem, 3.6vw, 2.15rem);
+    font-weight:760;
+    text-align:center;
+    letter-spacing:0;
+  }
 
-    .tagline{
-      margin:0;
-      text-align:center;
-      color:var(--muted);
-      font-size:1.02rem;
-    }
+  #nsf-cyber-copilot .tagline{
+    margin:0;
+    text-align:center;
+    color:var(--muted);
+    font-size:1.02rem;
+  }
 
-    .badges{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      justify-content:center;
-      margin-top:14px;
-    }
-    .badge{
-      font-size:0.9rem;
-      color:#1a2333;
-      background:rgba(255,255,255,0.80);
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:6px 10px;
-    }
-    .badge b{ font-weight:700; }
+  #nsf-cyber-copilot .badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-top:14px;
+  }
+  #nsf-cyber-copilot .badge{
+    font-size:0.9rem;
+    color:#1a2333;
+    background:rgba(255,255,255,0.80);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:6px 10px;
+  }
+  #nsf-cyber-copilot .badge b{ font-weight:700; }
 
-    .mono{
-      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    }
+  #nsf-cyber-copilot .mono{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
 
-    .outer-grid{
-      display:flex;
-      justify-content:center;
-      padding:0 4px;
-      margin:14px 0 0;
-    }
-    .inner-grid{
-      flex:0 1 100%;
-      max-width:100%;
-      text-align:center;
-    }
-    .inner-grid img{
-      width:86%;
-      max-width:560px;
-      margin:10px auto 0;
-      display:block;
-      padding:8px;
-      background:rgba(255,255,255,0.80);
-      border:1px solid var(--line);
-      border-radius:16px;
-      box-shadow:0 8px 20px rgba(12, 20, 33, 0.06);
-    }
+  #nsf-cyber-copilot .outer-grid{
+    display:flex;
+    justify-content:center;
+    padding:0 4px;
+    margin:14px 0 0;
+  }
+  #nsf-cyber-copilot .inner-grid{
+    flex:0 1 100%;
+    max-width:100%;
+    text-align:center;
+  }
+  #nsf-cyber-copilot .inner-grid img{
+    width:86%;
+    max-width:560px;
+    margin:10px auto 0;
+    display:block;
+    padding:8px;
+    background:rgba(255,255,255,0.80);
+    border:1px solid var(--line);
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(12, 20, 33, 0.06);
+  }
 
-    main{ padding:0 0 10px; }
-    section{ padding:22px 0; }
+  #nsf-cyber-copilot section{ padding:22px 0; }
 
-    .card{
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:#ffffff;
-      box-shadow:0 8px 18px rgba(12, 20, 33, 0.04);
-      padding:18px 18px 16px;
-    }
+  #nsf-cyber-copilot .card{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:#ffffff;
+    box-shadow:0 8px 18px rgba(12, 20, 33, 0.04);
+    padding:18px 18px 16px;
+  }
 
-    h2{
-      margin:0 0 10px;
-      font-size:1.25rem;
-      line-height:1.25;
-    }
-    h3{
-      margin:16px 0 8px;
-      font-size:1.05rem;
-      color:#1a2333;
-    }
+  #nsf-cyber-copilot h2{
+    margin:0 0 10px;
+    font-size:1.25rem;
+    line-height:1.25;
+  }
+  #nsf-cyber-copilot h3{
+    margin:16px 0 8px;
+    font-size:1.05rem;
+    color:#1a2333;
+  }
 
-    p{ margin:0 0 10px; }
-    .small{ font-size:0.95rem; color:var(--muted); }
+  #nsf-cyber-copilot p{ margin:0 0 10px; }
+  #nsf-cyber-copilot .small{ font-size:0.95rem; color:var(--muted); }
 
-    a{ color:var(--accent); text-decoration:none; }
-    a:hover, a:focus{ text-decoration:underline; }
+  #nsf-cyber-copilot a{ color:var(--accent); text-decoration:none; }
+  #nsf-cyber-copilot a:hover,
+  #nsf-cyber-copilot a:focus{ text-decoration:underline; }
 
-    ul, ol{ margin:0 0 10px 22px; }
-    li{ margin:6px 0; }
+  #nsf-cyber-copilot ul,
+  #nsf-cyber-copilot ol{ margin:0 0 10px 22px; }
+  #nsf-cyber-copilot li{ margin:6px 0; }
 
-    .note{
-      padding:12px 12px;
-      border:1px solid var(--line);
-      border-radius:12px;
-      background:var(--panel2);
-      color:#152033;
-    }
+  #nsf-cyber-copilot .note{
+    padding:12px 12px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:var(--panel2);
+    color:#152033;
+  }
 
-    figure{
-      margin:14px 0 0;
-      padding:12px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:#ffffff;
-    }
-    figcaption{
-      margin-top:8px;
-      font-size:0.95rem;
-      color:var(--muted);
-      text-align:center;
-    }
+  #nsf-cyber-copilot figure{
+    margin:14px 0 0;
+    padding:12px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:#ffffff;
+  }
+  #nsf-cyber-copilot figcaption{
+    margin-top:8px;
+    font-size:0.95rem;
+    color:var(--muted);
+    text-align:center;
+  }
 
-    .gallery-grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:14px;
-      margin-top:10px;
-    }
-    @media (min-width: 860px){
-      .gallery-grid.two-col{ grid-template-columns:repeat(2, 1fr); }
-      .gallery-grid.three-col{ grid-template-columns:repeat(3, 1fr); }
-    }
-    .gallery-grid figure{ margin:0; }
-    .gallery-grid img{
-      display:block;
-      margin:0 auto;
-      max-width:100%;
-      height:auto;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background:#fafafa;
-      width:auto;
-    }
+  #nsf-cyber-copilot .gallery-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-top:10px;
+  }
+  @media (min-width: 860px){
+    #nsf-cyber-copilot .gallery-grid.two-col{ grid-template-columns:repeat(2, 1fr); }
+    #nsf-cyber-copilot .gallery-grid.three-col{ grid-template-columns:repeat(3, 1fr); }
+  }
+  #nsf-cyber-copilot .gallery-grid figure{ margin:0; }
+  #nsf-cyber-copilot .gallery-grid img{
+    display:block;
+    margin:0 auto;
+    max-width:100%;
+    height:auto;
+    border-radius:12px;
+    border:1px solid var(--line);
+    background:#fafafa;
+    width:auto;
+  }
 
-    .logo-inline{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-top:10px;
-    }
-    .nsf-logo{
-      width:110px;
-      height:auto;
-      display:block;
-    }
-  </style>
-</head>
+  #nsf-cyber-copilot .logo-inline{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:10px;
+  }
+  #nsf-cyber-copilot .nsf-logo{
+    width:110px;
+    height:auto;
+    display:block;
+  }
+</style>
 
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+<div id="nsf-cyber-copilot">
+  <a class="skip-link" href="#nsfcp-main">Skip to main content</a>
 
-  <header>
+  <div class="wrap">
     <div class="hero" role="banner" aria-label="Project Header">
       <h1>Towards Crowd Sourced Artifact Curation for Cyberattacks Through a Learner Centered AI Co-Pilot</h1>
       <p class="tagline">
@@ -233,256 +228,251 @@
         </div>
       </div>
     </div>
-  </header>
 
-  <main id="main" tabindex="-1">
-    <section id="about">
-      <div class="card">
-        <h2>About</h2>
-        <p>
-          Creating robust and comprehensive cybersecurity solutions has become increasingly costly and time consuming due to the ever expanding list of vulnerabilities to be considered and new attacks found continuously. On the other hand, security research quite often only focuses on a specific attack or even sub components of it with a narrow scope. These constraints severely limit the opportunity in creating holistic, cross disciplinary cybersecurity solutions. This project aims to develop a learner centered co-pilot tool leveraging advances in artificial intelligence (AI) to produce attack scenarios and capture related data, which includes end to end attack interactions between the red team attacker and the cyber systems. The resulting high quality and structured attack artifact repository will be a highly valuable resource to the cyber security research community, especially for the test and validation of security solutions.
-        </p>
-        <p>
-          This project adopts large language model (LLM) to help cybersecurity research. Through an LLM adaptation approach, the red team co-pilot will incorporate techniques such as prompt engineering, reasoning, parameter efficient fine tuning, and few shot learning to guide users to emulate attack scenarios. The project will develop a curator friendly methodology to enable the crowd sourced aggregation of high quality cyberattack artifacts associated with attack behaviors and system settings, when the tool is deployed in the research community. The captured dataset contains both functional and behavioral aspects of attacks such as tactics, techniques, and procedures. A successful research outcome, including the tools generated, can help facilitate security benchmarking, AI based penetration testing, adversarial modeling, and research reproducibility. In addition, the red team co-pilot brings a useful tool to cyber security education and workforce development since it offers an accessible, adaptive, reusable, and learner centric platform for users to emulate attacks and develop cyber defense experiences.
-        </p>
-      </div>
-    </section>
-
-    <section id="award">
-      <div class="card">
-        <h2>NSF Award Summary</h2>
-        <p class="note">
-          <strong>NSF Award No.:</strong>
-          <a class="mono" href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2344237">#2344237</a><br />
-          <strong>Recipient Organization:</strong> Rochester Institute of Technology<br />
-          <strong>Project Period:</strong> 06/01/2024 to 05/31/2027<br />
-          <strong>PD PI:</strong> Michael Zuzak<br />
-          <strong>Co PI:</strong> Shanchieh J. Yang
-        </p>
-      </div>
-    </section>
-
-    <section id="publications">
-      <div class="card">
-        <h2>Publications</h2>
-        <p class="small">PDF Links Are Provided For Each Item Below.</p>
-
-        <ol>
-          <li>
-            R. Fayyazi, S. Hoyos Trueba, M. Zuzak, S. J. Yang, “ProveRAG: Provenance Driven Vulnerability Analysis with Automated Retrieval Augmented LLMs,” <em>IEEE Access</em>, 13 (2025): 212815 to 212826.
-            [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11272947">PDF</a>]
-          </li>
-          <li>
-            K. Nakano, R. Fayyazi, S. J. Yang, M. Zuzak, “Guided Reasoning in LLM Driven Penetration Testing Using Structured Attack Trees,” <em>COLM</em>, 2025.
-            [<a href="https://openreview.net/pdf?id=x4sdXZ7Jdu">PDF</a>]
-          </li>
-          <li>
-            R. Fayyazi, M. Zuzak, S. J. Yang, “LLM Embedding Based Attribution (LEA): Quantifying Source Contributions to Generative Model Response for Vulnerability Analysis,” <em>arXiv</em>, 2025.
-            [<a href="https://arxiv.org/pdf/2506.12100">PDF</a>]
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="code">
-      <div class="card">
-        <h2>Open Source Tooling and Teaching Resources</h2>
-
-        <h3>Research Tools</h3>
-        <ul>
-          <li>
-            <a href="https://github.com/KatsuNK/stt-reasoning">Structured Task Tree Reasoning</a>: Co-pilot reasoning pipeline implementing structured task tree based guidance for penetration testing workflows.
-          </li>
-          <li>
-            <a href="https://github.com/KatsuNK/pstg-pentesting">Probabilistic Structured Task Guidance</a>: Co-pilot implementation with probabilistic structured reasoning for guided penetration testing.
-          </li>
-          <li>
-            <a href="https://github.com/RezzFayyazi/LEA">LLM Embedding Based Attribution (LEA)</a>: Attribution tooling for provenance aware vulnerability analysis using embedding space evidence.
-          </li>
-          <li>
-            <a href="https://github.com/RezzFayyazi/ProveRAG">ProveRAG</a>: Provenance driven vulnerability analysis with automated retrieval augmented generation.
-          </li>
-        </ul>
-
-        <h3>Teaching Resources</h3>
-        <p>
-          <strong>Generative AI in Cybersecurity:</strong>
-          A hands on course for researchers, engineers, and security professionals who want to understand, adapt, and deploy large language model (LLM) technology in modern cyber defense operations.
-        </p>
-        <ul>
-          <li>
-            <a href="https://github.com/RezzFayyazi/GenAI-Cybersecurity">Open Source Slides and Lab Assignments</a>: Course materials including lecture slides and laboratory exercises.
-          </li>
-        </ul>
-
-        <p>
-          <strong>RenCTF:</strong>
-          A gamified, team based platform designed to teach penetration testing skills. RenCTF provides an engaging experience for participants and supports hands on learning activities.
-        </p>
-        <ul>
-          <li>
-            <a href="https://www.rit.edu/news/student-devises-gamified-cybersecurity-program-peers">RIT News Coverage</a>: Overview of the RenCTF platform and its use for peer training.
-          </li>
-          <li>
-            <a href="https://github.com/RenAaron/RENCTF_PUBLIC">Open Source RenCTF Code Base</a>: Public release of the RenCTF platform implementation.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="students">
-      <div class="card">
-        <h2>Student Researchers</h2>
-        <ul>
-          <li><strong>Reza Fayyazi</strong>: PhD Student Researcher</li>
-          <li><strong>Katsuaki Nakano</strong>: PhD Student Researcher</li>
-          <li><strong>Matthew Heller</strong>: MS Student Researcher</li>
-          <li><strong>Ali Stambayev</strong>: MS Student Researcher</li>
-          <li><strong>Renaaron Ellis</strong>: Undergraduate Student Researcher</li>
-          <li><strong>Stella Hoyos Trueba</strong>: Undergraduate Student Researcher</li>
-          <li><strong>Christopher Nokes</strong>: Undergraduate Student Researcher</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="figures">
-      <div class="card">
-        <h2>Project Figures and Experimental Results</h2>
-
-        <h3>RenCTF Workforce Development Platform</h3>
-        <p class="small">
-          RenCTF is a gamified, team based platform that supports interactive security workforce development activities, including weekly Capture the Flag and Hack The Box challenges, and an exhibit augmented with the learner centered co-pilot.
-        </p>
-
-        <div class="gallery-grid" aria-label="RenCTF Landing Page">
-          <figure>
-            <img
-              src="/images/RenCTF1.png"
-              alt="RenCTF landing webpage for gamified security workforce development activities linked to the hardware platform, with an example co-pilot interaction."
-            />
-            <figcaption>
-              Landing webpage for gamified security workforce development activities linked to the hardware platform. The platform hosts weekly Capture the Flag and Hack The Box challenges. An example co-pilot interaction is shown on the right, where a telnet connection is suggested.
-            </figcaption>
-          </figure>
+    <main id="nsfcp-main" tabindex="-1">
+      <section id="about">
+        <div class="card">
+          <h2>About</h2>
+          <p>
+            Creating robust and comprehensive cybersecurity solutions has become increasingly costly and time consuming due to the ever expanding list of vulnerabilities to be considered and new attacks found continuously. On the other hand, security research quite often only focuses on a specific attack or even sub components of it with a narrow scope. These constraints severely limit the opportunity in creating holistic, cross disciplinary cybersecurity solutions. This project aims to develop a learner centered co-pilot tool leveraging advances in artificial intelligence (AI) to produce attack scenarios and capture related data, which includes end to end attack interactions between the red team attacker and the cyber systems. The resulting high quality and structured attack artifact repository will be a highly valuable resource to the cyber security research community, especially for the test and validation of security solutions.
+          </p>
+          <p>
+            This project adopts large language model (LLM) to help cybersecurity research. Through an LLM adaptation approach, the red team co-pilot will incorporate techniques such as prompt engineering, reasoning, parameter efficient fine tuning, and few shot learning to guide users to emulate attack scenarios. The project will develop a curator friendly methodology to enable the crowd sourced aggregation of high quality cyberattack artifacts associated with attack behaviors and system settings, when the tool is deployed in the research community. The captured dataset contains both functional and behavioral aspects of attacks such as tactics, techniques, and procedures. A successful research outcome, including the tools generated, can help facilitate security benchmarking, AI based penetration testing, adversarial modeling, and research reproducibility. In addition, the red team co-pilot brings a useful tool to cyber security education and workforce development since it offers an accessible, adaptive, reusable, and learner centric platform for users to emulate attacks and develop cyber defense experiences.
+          </p>
         </div>
+      </section>
 
-        <div class="gallery-grid three-col" aria-label="RenCTF Platform Images">
-          <figure>
-            <img
-              src="/images/RenCTF2.jpg"
-              alt="RenCTF hardware component displayed in the Computer Engineering Department at RIT for interactive team based activities."
-            />
-            <figcaption>
-              Developed hardware component displayed in the Computer Engineering Department at RIT to host interactive, team based security workforce development activities.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="/images/RenCTF4.png"
-              alt="Mockup and rendering of the hardware for the hardware co-pilot platform."
-            />
-            <figcaption>
-              Mockup and rendering of the hardware for the hardware co-pilot platform.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="/images/RenCTF5.jpg"
-              alt="Renaaron Ellis and Michael Zuzak with the initial release of the co-pilot workforce development platform."
-            />
-            <figcaption>
-              Renaaron Ellis and Michael Zuzak with the initial co-pilot workforce development platform.
-            </figcaption>
-          </figure>
+      <section id="award">
+        <div class="card">
+          <h2>NSF Award Summary</h2>
+          <p class="note">
+            <strong>NSF Award No.:</strong>
+            <a class="mono" href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2344237">#2344237</a><br />
+            <strong>Recipient Organization:</strong> Rochester Institute of Technology<br />
+            <strong>Project Period:</strong> 06/01/2024 to 05/31/2027<br />
+            <strong>PD PI:</strong> Michael Zuzak<br />
+            <strong>Co PI:</strong> Shanchieh J. Yang
+          </p>
         </div>
+      </section>
 
-        <h3>Co-Pilot Reasoning Pipeline and Performance</h3>
-        <div class="gallery-grid two-col" aria-label="Co-Pilot Reasoning Pipeline and Performance Gallery">
-          <figure>
-            <img
-              src="/images/Reasoning1.png"
-              alt="Reasoning pipeline figure for the co-pilot comparing proposed STG and PSTG reasoning steps with a prior self guided reasoning method, including transitions and interface interactions."
-            />
-            <figcaption>
-              Co-pilot reasoning pipeline comparing the proposed STG and PSTG reasoning method (steps 1 through 4) and a prior self guided reasoning method (steps A through C) from Deng et al. (2024). Solid arrows denote process transitions, and dotted arrows denote interactions between the LLM and the interface for task management.
-            </figcaption>
-          </figure>
+      <section id="publications">
+        <div class="card">
+          <h2>Publications</h2>
+          <p class="small">PDF Links Are Provided For Each Item Below.</p>
 
-          <figure>
-            <img
-              src="/images/CoPilot_Perf1.png"
-              alt="Performance comparison figure for co-pilot reasoning pipeline across HackTheBox machines and models."
-            />
-            <figcaption>
-              Co-pilot performance for the reasoning pipeline across HackTheBox machines and models.
-            </figcaption>
-          </figure>
+          <ol>
+            <li>
+              R. Fayyazi, S. Hoyos Trueba, M. Zuzak, S. J. Yang, “ProveRAG: Provenance Driven Vulnerability Analysis with Automated Retrieval Augmented LLMs,” <em>IEEE Access</em>, 13 (2025): 212815 to 212826.
+              [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11272947">PDF</a>]
+            </li>
+            <li>
+              K. Nakano, R. Fayyazi, S. J. Yang, M. Zuzak, “Guided Reasoning in LLM Driven Penetration Testing Using Structured Attack Trees,” <em>COLM</em>, 2025.
+              [<a href="https://openreview.net/pdf?id=x4sdXZ7Jdu">PDF</a>]
+            </li>
+            <li>
+              R. Fayyazi, M. Zuzak, S. J. Yang, “LLM Embedding Based Attribution (LEA): Quantifying Source Contributions to Generative Model Response for Vulnerability Analysis,” <em>arXiv</em>, 2025.
+              [<a href="https://arxiv.org/pdf/2506.12100">PDF</a>]
+            </li>
+          </ol>
         </div>
+      </section>
 
-        <h3>Tool Results and Analyses</h3>
-        <div class="gallery-grid two-col" aria-label="Tool Results and Analyses Gallery">
-          <figure>
-            <img
-              src="/images/ProveRAG1.png"
-              alt="ProveRAG overview figure showing automated retrieval augmented generation with self critique and provenance."
-            />
-            <figcaption>
-              ProveRAG workflow for automated retrieval augmented generation with self critique and provenance.
-            </figcaption>
-          </figure>
+      <section id="code">
+        <div class="card">
+          <h2>Open Source Tooling and Teaching Resources</h2>
 
-          <figure>
-            <img
-              src="/images/LEA1.png"
-              alt="LEA dependence distribution figure for CVE 2025 30066 showing relative source contributions."
-            />
-            <figcaption>
-              LEA dependence distribution for CVE 2025 30066, quantifying relative source contribution to the vulnerability response. The model internal knowledge contributes 26 percent, the input query contributes 13 percent, and the retrieved context contributes 61 percent.
-            </figcaption>
-          </figure>
+          <h3>Research Tools</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/KatsuNK/stt-reasoning">Structured Task Tree Reasoning</a>: Co-pilot reasoning pipeline implementing structured task tree based guidance for penetration testing workflows.
+            </li>
+            <li>
+              <a href="https://github.com/KatsuNK/pstg-pentesting">Probabilistic Structured Task Guidance</a>: Co-pilot implementation with probabilistic structured reasoning for guided penetration testing.
+            </li>
+            <li>
+              <a href="https://github.com/RezzFayyazi/LEA">LLM Embedding Based Attribution (LEA)</a>: Attribution tooling for provenance aware vulnerability analysis using embedding space evidence.
+            </li>
+            <li>
+              <a href="https://github.com/RezzFayyazi/ProveRAG">ProveRAG</a>: Provenance driven vulnerability analysis with automated retrieval augmented generation.
+            </li>
+          </ul>
+
+          <h3>Teaching Resources</h3>
+          <p>
+            <strong>Generative AI in Cybersecurity:</strong>
+            A hands on course for researchers, engineers, and security professionals who want to understand, adapt, and deploy large language model (LLM) technology in modern cyber defense operations.
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/RezzFayyazi/GenAI-Cybersecurity">Open Source Slides and Lab Assignments</a>: Course materials including lecture slides and laboratory exercises.
+            </li>
+          </ul>
+
+          <p>
+            <strong>RenCTF:</strong>
+            A gamified, team based platform designed to teach penetration testing skills. RenCTF provides an engaging experience for participants and supports hands on learning activities.
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.rit.edu/news/student-devises-gamified-cybersecurity-program-peers">RIT News Coverage</a>: Overview of the RenCTF platform and its use for peer training.
+            </li>
+            <li>
+              <a href="https://github.com/RenAaron/RENCTF_PUBLIC">Open Source RenCTF Code Base</a>: Public release of the RenCTF platform implementation.
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <div class="card">
-        <h2>Contact</h2>
-        <ul>
-          <li>
-            <strong>Michael Zuzak</strong>, Assistant Professor, Department of Computer Engineering, Rochester Institute of Technology:
-            <a href="mailto:mjzeec@rit.edu">mjzeec@rit.edu</a>
-          </li>
-          <li>
-            <strong>Shanchieh J. Yang</strong>, Professor and Inaugural David and Cathleen Reisenauer Family Director, Institute for Informatics and Applied Technology, Gonzaga University:
-            <a href="mailto:yangj@gonzaga.edu">yangj@gonzaga.edu</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section id="students">
+        <div class="card">
+          <h2>Student Researchers</h2>
+          <ul>
+            <li><strong>Reza Fayyazi</strong>: PhD Student Researcher</li>
+            <li><strong>Katsuaki Nakano</strong>: PhD Student Researcher</li>
+            <li><strong>Matthew Heller</strong>: MS Student Researcher</li>
+            <li><strong>Ali Stambayev</strong>: MS Student Researcher</li>
+            <li><strong>Renaaron Ellis</strong>: Undergraduate Student Researcher</li>
+            <li><strong>Stella Hoyos Trueba</strong>: Undergraduate Student Researcher</li>
+            <li><strong>Christopher Nokes</strong>: Undergraduate Student Researcher</li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="acknowledgment">
-      <div class="card">
-        <h2>Acknowledgment</h2>
+      <section id="figures">
+        <div class="card">
+          <h2>Project Figures and Experimental Results</h2>
 
-        <div class="logo-inline" aria-label="NSF Acknowledgment With Logo">
-          <img
-            class="nsf-logo"
-            src="/images/nsf.png"
-            alt="National Science Foundation Logo"
-          />
-          <div>
-            <p style="margin:0 0 8px;">
-              This material is based upon work supported by the National Science Foundation under NSF Award No. #2344237.
-            </p>
-            <p style="margin:0;">
-              Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-            </p>
+          <h3>RenCTF Workforce Development Platform</h3>
+          <p class="small">
+            RenCTF is a gamified, team based platform that supports interactive security workforce development activities, including weekly Capture the Flag and Hack The Box challenges, and an exhibit augmented with the learner centered co-pilot.
+          </p>
+
+          <div class="gallery-grid" aria-label="RenCTF Landing Page">
+            <figure>
+              <img
+                src="/images/RenCTF1.png"
+                alt="RenCTF landing webpage for gamified security workforce development activities linked to the hardware platform, with an example co-pilot interaction."
+              />
+              <figcaption>
+                Landing webpage for gamified security workforce development activities linked to the hardware platform. The platform hosts weekly Capture the Flag and Hack The Box challenges. An example co-pilot interaction is shown on the right, where a telnet connection is suggested.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-grid three-col" aria-label="RenCTF Platform Images">
+            <figure>
+              <img
+                src="/images/RenCTF2.jpg"
+                alt="RenCTF hardware component displayed in the Computer Engineering Department at RIT for interactive team based activities."
+              />
+              <figcaption>
+                Developed hardware component displayed in the Computer Engineering Department at RIT to host interactive, team based security workforce development activities.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/RenCTF4.png"
+                alt="Mockup and rendering of the hardware for the hardware co-pilot platform."
+              />
+              <figcaption>
+                Mockup and rendering of the hardware for the hardware co-pilot platform.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/RenCTF5.jpg"
+                alt="Renaaron Ellis and Michael Zuzak with the initial release of the co-pilot workforce development platform."
+              />
+              <figcaption>
+                Renaaron Ellis and Michael Zuzak with the initial co-pilot workforce development platform.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3>Co-Pilot Reasoning Pipeline and Performance</h3>
+          <div class="gallery-grid two-col" aria-label="Co-Pilot Reasoning Pipeline and Performance Gallery">
+            <figure>
+              <img
+                src="/images/Reasoning1.png"
+                alt="Reasoning pipeline figure for the co-pilot comparing proposed STG and PSTG reasoning steps with a prior self guided reasoning method, including transitions and interface interactions."
+              />
+              <figcaption>
+                Co-pilot reasoning pipeline comparing the proposed STG and PSTG reasoning method (steps 1 through 4) and a prior self guided reasoning method (steps A through C) from Deng et al. (2024). Solid arrows denote process transitions, and dotted arrows denote interactions between the LLM and the interface for task management.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/CoPilot_Perf1.png"
+                alt="Performance comparison figure for co-pilot reasoning pipeline across HackTheBox machines and models."
+              />
+              <figcaption>
+                Co-pilot performance for the reasoning pipeline across HackTheBox machines and models.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3>Tool Results and Analyses</h3>
+          <div class="gallery-grid two-col" aria-label="Tool Results and Analyses Gallery">
+            <figure>
+              <img
+                src="/images/ProveRAG1.png"
+                alt="ProveRAG overview figure showing automated retrieval augmented generation with self critique and provenance."
+              />
+              <figcaption>
+                ProveRAG workflow for automated retrieval augmented generation with self critique and provenance.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/LEA1.png"
+                alt="LEA dependence distribution figure for CVE 2025 30066 showing relative source contributions."
+              />
+              <figcaption>
+                LEA dependence distribution for CVE 2025 30066, quantifying relative source contribution to the vulnerability response. The model internal knowledge contributes 26 percent, the input query contributes 13 percent, and the retrieved context contributes 61 percent.
+              </figcaption>
+            </figure>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <strong>Michael Zuzak</strong>, Assistant Professor, Department of Computer Engineering, Rochester Institute of Technology:
+              <a href="mailto:mjzeec@rit.edu">mjzeec@rit.edu</a>
+            </li>
+            <li>
+              <strong>Shanchieh J. Yang</strong>, Professor and Inaugural David and Cathleen Reisenauer Family Director, Institute for Informatics and Applied Technology, Gonzaga University:
+              <a href="mailto:yangj@gonzaga.edu">yangj@gonzaga.edu</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="acknowledgment">
+        <div class="card">
+          <h2>Acknowledgment</h2>
+
+          <div class="logo-inline" aria-label="NSF Acknowledgment With Logo">
+            <img class="nsf-logo" src="/images/nsf.png" alt="National Science Foundation Logo" />
+            <div>
+              <p style="margin:0 0 8px;">
+                This material is based upon work supported by the National Science Foundation under NSF Award No. #2344237.
+              </p>
+              <p style="margin:0;">
+                Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
