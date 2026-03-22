@@ -1,109 +1,498 @@
 ---
 layout: archive
 collection: research
-title: "<center>Design Space Modeling for Logic Obfuscation to Enable System-Wide Security during IC Manufacture and Test</center>"
+title: ""
 permalink: /research/nsf_dsm
 author_profile: true
 ---
 
 <style>
-* {
-   box-sizing: border-box;
-}
-h1 {
-   text-align: center;
-}
-.outer-grid {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   padding: 0 4px;
-}
-.inner-grid {
-   flex: 25%;
-   max-width: 67%;
-   padding: 0 4px;
-}
-.inner-grid img {
-   margin-top: 8px;
-   width: 45%;
-   padding: 10px;
-}
-@media screen and (max-width: 350px) {
-   .inner-grid {
-      flex: 50%;
-      max-width: 45%;
-   }
-}
-@media screen and (max-width: 350px) {
-   .inner-grid {
-      flex: 50%;
-      max-width: 45%;
-   }
-}
+  #nsf-dsm {
+    --bg:#ffffff;
+    --panel:#fbfbfc;
+    --panel2:#f3f6fb;
+    --text:#111111;
+    --muted:#444b57;
+    --line:#e6e8ee;
+    --accent:#0b57d0;
+    --radius:14px;
+    --shadow:0 10px 24px rgba(12, 20, 33, 0.08);
+    --max:980px;
+
+    color:var(--text);
+    font-family:system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    line-height:1.58;
+  }
+
+  #nsf-dsm *{ box-sizing:border-box; }
+
+  #nsf-dsm .skip-link{
+    position:absolute;
+    left:-999px;
+    top:0;
+    background:#000;
+    color:#fff;
+    padding:10px 12px;
+    border-radius:10px;
+    z-index:1000;
+  }
+  #nsf-dsm .skip-link:focus{ left:12px; top:12px; }
+
+  #nsf-dsm .wrap{
+    width:min(var(--max), 92vw);
+    margin:0 auto;
+  }
+
+  #nsf-dsm .hero{
+    margin:20px auto 0;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:
+      radial-gradient(900px 240px at 15% 0%, rgba(11,87,208,0.10), transparent 60%),
+      radial-gradient(800px 240px at 85% 0%, rgba(21,101,192,0.08), transparent 60%),
+      var(--panel);
+    box-shadow:var(--shadow);
+    padding:22px 20px;
+  }
+
+  #nsf-dsm h1{
+    margin:0 0 8px;
+    font-size:clamp(1.55rem, 3.6vw, 2.15rem);
+    font-weight:760;
+    text-align:center;
+    letter-spacing:0;
+  }
+
+  #nsf-dsm .tagline{
+    margin:0;
+    text-align:center;
+    color:var(--muted);
+    font-size:1.02rem;
+  }
+
+  #nsf-dsm .badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-top:14px;
+  }
+  #nsf-dsm .badge{
+    font-size:0.9rem;
+    color:#1a2333;
+    background:rgba(255,255,255,0.80);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:6px 10px;
+  }
+  #nsf-dsm .badge b{ font-weight:700; }
+
+  #nsf-dsm .mono{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  #nsf-dsm .outer-grid{
+    display:flex;
+    justify-content:center;
+    padding:0 4px;
+    margin:14px 0 0;
+  }
+  #nsf-dsm .inner-grid{
+    flex:0 1 100%;
+    max-width:100%;
+    text-align:center;
+  }
+  #nsf-dsm .inner-grid img{
+    width:86%;
+    max-width:560px;
+    margin:10px auto 0;
+    display:block;
+    padding:8px;
+    background:rgba(255,255,255,0.80);
+    border:1px solid var(--line);
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(12, 20, 33, 0.06);
+  }
+
+  #nsf-dsm section{ padding:22px 0; }
+
+  #nsf-dsm .card{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:#ffffff;
+    box-shadow:0 8px 18px rgba(12, 20, 33, 0.04);
+    padding:18px 18px 16px;
+  }
+
+  #nsf-dsm h2{
+    margin:0 0 10px;
+    font-size:1.25rem;
+    line-height:1.25;
+  }
+  #nsf-dsm h3{
+    margin:16px 0 8px;
+    font-size:1.05rem;
+    color:#1a2333;
+  }
+
+  #nsf-dsm p{ margin:0 0 10px; }
+  #nsf-dsm .small{ font-size:0.95rem; color:var(--muted); }
+
+  #nsf-dsm a{ color:var(--accent); text-decoration:none; }
+  #nsf-dsm a:hover,
+  #nsf-dsm a:focus{ text-decoration:underline; }
+
+  #nsf-dsm ul,
+  #nsf-dsm ol{ margin:0 0 10px 22px; }
+  #nsf-dsm li{ margin:6px 0; }
+
+  #nsf-dsm .note{
+    padding:12px 12px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:var(--panel2);
+    color:#152033;
+  }
+
+  #nsf-dsm figure{
+    margin:14px 0 0;
+    padding:12px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:#ffffff;
+  }
+  #nsf-dsm figcaption{
+    margin-top:8px;
+    font-size:0.95rem;
+    color:var(--muted);
+    text-align:center;
+  }
+
+  #nsf-dsm .gallery-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-top:10px;
+  }
+  @media (min-width: 860px){
+    #nsf-dsm .gallery-grid.two-col{ grid-template-columns:repeat(2, 1fr); }
+    #nsf-dsm .gallery-grid.three-col{ grid-template-columns:repeat(3, 1fr); }
+  }
+  #nsf-dsm .gallery-grid figure{ margin:0; }
+  #nsf-dsm .gallery-grid img{
+    display:block;
+    margin:0 auto;
+    max-width:100%;
+    height:auto;
+    border-radius:12px;
+    border:1px solid var(--line);
+    background:#fafafa;
+    width:auto;
+  }
+
+  #nsf-dsm .logo-inline{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:10px;
+  }
+  #nsf-dsm .nsf-logo{
+    width:110px;
+    height:auto;
+    display:block;
+  }
 </style>
 
-<br>
-<h2 align="left">About:</h2>
-Due to the rising cost of semiconductor manufacturing, computer chip designers are increasingly reliant on offshore manufacturers. These manufacturers are generally considered to be untrusted, driving concerns of intellectual property (IP) piracy and theft. Logic obfuscation, also called logic locking, was developed to mitigate these threats, however, its effectiveness varies widely based on how obfuscation resources are allocated throughout a system. This project studies how to model, automate, and evaluate the high-level configuration of logic obfuscation in a system to maximize security with minimal design overhead. The project's novelties are the system-wide view of the obfuscation resource allocation problem and the framework to generate mathematical models for this allocation problem. The purpose of these models is to automatically identify effective distributions of budgeted obfuscation resources in varied computer chips and provide intuition on how obfuscation secures a complex system. The project's broader significance and importance are in lowering the barrier to developing secure computer chips for high-trust applications (e.g., healthcare, defense, finance, and automotive) through automation. The integration of education and research is a key objective. This includes research opportunities for graduate and undergraduate students as well as open-source course modules to train next-generation security experts for the workforce.<br/> <br/>This project bridges the knowledge gap between combinational, gate-level logic obfuscation schemes and their security impact in the larger integrated circuit they protect. Specifically, the project develops a design space modeling framework for logic obfuscation system configuration in order to budget obfuscation resources, allocate resources to design regions, and specify obfuscation schemes in these regions. Given a fixed budget of various obfuscation resources, these models automatically identify obfuscation configurations that fulfill system-wide security goals with minimal design overhead. The research artifacts are 1) quantifiable system security metrics for obfuscation, 2) an open-source design space modeling framework for obfuscation, and 3) a verification of generated models.<br/><br/> 
+<div id="nsf-dsm">
+  <a class="skip-link" href="#nsfdsm-main">Skip to main content</a>
 
-<h2 align="left">Publications:</h2>
-<ul>
-   <li> <a href="https://mzuzak.github.io/files/adjoining_gates_jhass.pdf"> Wojtal, Thomas and Zuzak, Michael "Mitigating Electro-Optical Frequency Mapping Attacks on Logic-Locked Integrated Circuits" Springer Journal of Hardware and Systems Security (JHASS) , 2025 https://doi.org/10.1007/s41635-025-00158-w </a></li>
-   <li> <a href="https://mzuzak.github.io/files/ll_dsm_islped.pdf"> Lam, Long and Melnyk, Maksym and Zuzak, Michael "Low Overhead Logic Locking for System-Level Security: A Design Space Modeling Approach" IEEE/ACM International Symposium on Low Power Electronic Design (ISLPED) , 2024 https://doi.org/10.1145/3665314.3670833 </a></li>
-   <li> <a href="https://mzuzak.github.io/files/robust_fusion_mipr.pdf"> Nakano, Katsuaki and Zuzak, Michael and Merkel, Cory and Loui, Alexander "Trustworthy and Robust Machine Learning for Multimedia: Challenges and Perspectives" IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR) , 2024 </a></li>
-   <li> <a href="https://mzuzak.github.io/files/secure_binding_TCAD.pdf"> Zuzak, Michael and Liu, Yuntao and Srivastava, Ankur "Security-Aware Resource Binding to Enhance Logic Obfuscation" IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems , v.42 , 2023 https://doi.org/10.1109/TCAD.2023.3294453 </a></li>
-   <li> <a href="https://mzuzak.github.io/files/Logic_Locking_for_Neural_Trojans.pdf"> Xu, Hongye and Liu, Dongfang and Merkel, Cory and Zuzak, Michael "Exploiting Logic Locking for a Neural Trojan Attack on Machine Learning Accelerators" GLSVLSI '23: Proceedings of the Great Lakes Symposium on VLSI 2023 , 2023 https://doi.org/10.1145/3583781.3590242 </a></li>
-</ul>
+  <div class="wrap">
+    <div class="hero" role="banner" aria-label="Project Header">
+      <h1>Design Space Modeling for Logic Obfuscation to Enable System-Wide Security during IC Manufacture and Test</h1>
 
-<h2 align="left">Open-Source Tooling:</h2>
+      <div class="badges" aria-label="NSF Award Summary">
+        <span class="badge"><b>NSF Award No.:</b> <span class="mono">#2245573</span></span>
+        <span class="badge"><b>Period:</b> 03/15/2023 to 02/28/2026</span>
+      </div>
 
-<h3 align="left">Design Space Modeling for Logic Locking:</h3>
-DSM for Logic Locking is an open-source example script implementing Design Space Modeling for obtaining a satisfying locking configuration given an arbitary IC. It provides a means for Python users to utilize R functions, specifically SSANOVA modeling, while staying in the Python domain. An overview of the design space modeling algorithm can be found in the ISLPED'24 paper linked above. 
-<ul>
-   <li> <a href="https://github.com/mzuzak/DSM-for-Logic-Locking"> Open-Source Tool for Design Space Modeling for Logic Locking </a></li>
-</ul>
+    </div>
 
-<h3 align="left">Adjoining Gates:</h3>
-The Adjoining Gate system is an open-source set of functions to detect any leakage of logic locking keys from electro-optical frequency mapping and automatically implement Adjoining Gates as a countermeasure in logic-locked circuits. An extensive overview of the Adjoining Gate technique can be found in the JHASS'25 paper linked above.
-<ul>
-   <li> <a href="https://github.com/twojtal/Adjoining-Gate"> Open-Source Adjoining Gate </a></li>
-</ul>
+    <main id="nsfdsm-main" tabindex="-1">
+      <section id="about">
+        <div class="card">
+          <h2>About</h2>
+          <p>
+            Due to the rising cost of semiconductor manufacturing, computer chip designers are increasingly reliant on offshore manufacturers. These manufacturers are generally considered to be untrusted, driving concerns of intellectual property (IP) piracy and theft. Logic obfuscation, also called logic locking, was developed to mitigate these threats, however, its effectiveness varies widely based on how obfuscation resources are allocated throughout a system. This project studies how to model, automate, and evaluate the high-level configuration of logic obfuscation in a system to maximize security with minimal design overhead. The project's novelties are the system-wide view of the obfuscation resource allocation problem and the framework to generate mathematical models for this allocation problem. The purpose of these models is to automatically identify effective distributions of budgeted obfuscation resources in varied computer chips and provide intuition on how obfuscation secures a complex system. The project's broader significance and importance are in lowering the barrier to developing secure computer chips for high-trust applications (e.g., healthcare, defense, finance, and automotive) through automation. The integration of education and research is a key objective. This includes research opportunities for graduate and undergraduate students as well as open-source course modules to train next-generation security experts for the workforce.
+          </p>
+          <p>
+            This project bridges the knowledge gap between combinational, gate-level logic obfuscation schemes and their security impact in the larger integrated circuit they protect. Specifically, the project develops a design space modeling framework for logic obfuscation system configuration in order to budget obfuscation resources, allocate resources to design regions, and specify obfuscation schemes in these regions. Given a fixed budget of various obfuscation resources, these models automatically identify obfuscation configurations that fulfill system-wide security goals with minimal design overhead. The research artifacts are 1) quantifiable system security metrics for obfuscation, 2) an open-source design space modeling framework for obfuscation, and 3) a verification of generated models.
+          </p>
+        </div>
+      </section>
 
-<h3 align="left">RenCTF Gamified Security Workforce Development Platform:</h3>
-RenCTF is an interactive, team-based platform designed to teach penetration testing (pentesting) skills. Combining web application functionality with hardware integration, RenCTF provides a unique and engaging experience for participants. This project was developed by RenAaron Ellis and Dr. Zuzak.
-<div class="outer-grid">
-	<div class="inner-grid">
-			<img src="/images/renctf_hw.JPG"/>
-			<img src="/images/renctf_website.png"/>
-	</div>
+      <section id="award">
+        <div class="card">
+          <h2>NSF Award Summary</h2>
+          <p class="note">
+            <strong>NSF Award No.:</strong>
+            <a class="mono" href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2245573">#2245573</a><br />
+            <strong>Recipient Organization:</strong> Rochester Institute of Technology<br />
+            <strong>Project Period:</strong> 03/15/2023 to 02/28/2026<br />
+            <strong>PD/PI:</strong> Michael Zuzak
+          </p>
+        </div>
+      </section>
+
+      <section id="publications">
+        <div class="card">
+          <h2>Publications</h2>
+          <p class="small">PDF links are provided for each item below.</p>
+
+          <ol>
+            <li>
+              R. Paul, L. Lam, M. Melnyk, and M. Zuzak, "DSMLock: Low Overhead Logic Locking for System Security with Design Space Modeling," <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em>, Early Access, 2025.
+              [<a href="https://mzuzak.github.io/files/dsm_lock_tcad.pdf">PDF</a>]
+              [<a href="https://github.com/mzuzak/DSM-for-Logic-Locking">Code</a>]
+            </li>
+            <li>
+              R. Paul and M. Zuzak, "Michscan: Black-Box Neural Network Integrity Checking at Runtime Through Power Analysis," in <em>2025 IEEE International Symposium on Hardware Oriented Security and Trust (HOST)</em>, 2025, pp. 205-215.
+              [<a href="https://mzuzak.github.io/files/michscan_host.pdf">PDF</a>]
+            </li>
+            <li>
+              T. Wojtal and M. Zuzak, "Mitigating Electro-Optical Frequency Mapping Attacks on Logic-Locked Integrated Circuits," <em>Springer Journal of Hardware and Systems Security (JHASS)</em>, 2025.
+              [<a href="https://mzuzak.github.io/files/adjoining_gates_jhass.pdf">PDF</a>]
+              [<a href="https://github.com/twojtal/Adjoining-Gate">Code</a>]
+            </li>
+            <li>
+              L. Lam, M. Melnyk, and M. Zuzak, "Low Overhead Logic Locking for System-Level Security: A Design Space Modeling Approach," in <em>IEEE/ACM International Symposium on Low Power Electronic Design (ISLPED)</em>, 2024, pp. 1-6.
+              [<a href="https://mzuzak.github.io/files/ll_dsm_islped.pdf">PDF</a>]
+            </li>
+            <li>
+              K. Nakano, M. Zuzak, C. Merkel, and A. Loui, "Trustworthy and Robust Machine Learning for Multimedia: Challenges and Perspectives," in <em>IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR)</em>, 2024.
+              [<a href="https://mzuzak.github.io/files/robust_fusion_mipr.pdf">PDF</a>]
+            </li>
+            <li>
+              M. Zuzak, Y. Liu, and A. Srivastava, "Security-Aware Resource Binding to Enhance Logic Obfuscation," <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em>, vol. 42, no. 12, pp. 4528-4540, 2023.
+              [<a href="https://mzuzak.github.io/files/secure_binding_TCAD.pdf">PDF</a>]
+            </li>
+            <li>
+              H. Xu, D. Liu, C. Merkel, and M. Zuzak, "Exploiting Logic Locking for a Neural Trojan Attack on Machine Learning Accelerators," in <em>GLSVLSI '23: Proceedings of the Great Lakes Symposium on VLSI 2023</em>, 2023, pp. 351-356.
+              [<a href="https://mzuzak.github.io/files/Logic_Locking_for_Neural_Trojans.pdf">PDF</a>]
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="code">
+        <div class="card">
+          <h2>Open-Source Tooling and Teaching Resources</h2>
+
+          <h3>Research Tools</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/mzuzak/DSM-for-Logic-Locking">Design Space Modeling for Logic Locking</a>: An open-source example script implementing DSMLock for logic-locked ICs. Provides a Python interface to R functions, including SSANOVA modeling. An overview of the algorithm is in the ISLPED'24 paper above.
+            </li>
+            <li>
+              <a href="https://github.com/twojtal/Adjoining-Gate">Adjoining Gates</a>: An open-source set of functions to detect key leakage from electro-optical frequency mapping attacks in logic-locked circuits and implement Adjoining Gates as a countermeasure. An overview is in the JHASS'25 paper above.
+            </li>
+          </ul>
+
+          <h3>Teaching Resources</h3>
+          <p>
+            <strong>CMPE361: Introduction to Hardware Security:</strong>
+            An undergraduate hardware security course developed under this project and offered at RIT since Fall 2023. New York State approved the course as the required first course for the new <a href="https://www.rit.edu/study/computer-engineering-bs-secure-systems-option">Secure Systems degree option</a> in Computer Engineering, which launched in Fall 2024.
+          </p>
+
+          <p>
+            <strong>RenCTF:</strong>
+            An interactive, team-based platform for teaching penetration testing skills, combining a web application with a hardware component. Developed by RenAaron Ellis and Dr. Zuzak. More than 85 RIT students have participated in capture-the-flag-style cybersecurity exercises on the platform. An updated UI and AI co-pilot were developed through NSF Award No. 2344237.
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.rit.edu/news/student-devises-gamified-cybersecurity-program-peers">RIT News Coverage</a>
+            </li>
+            <li>
+              <a href="https://github.com/RenAaron/RenCTF">Open-Source RenCTF Code Base</a>
+            </li>
+            <li>
+              <a href="https://ren-ctf-webapp.web.app/">Hosted RenCTF Web Application</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="students">
+        <div class="card">
+          <h2>Student Researchers</h2>
+          <ul>
+            <li><strong>Robi Paul</strong>: PhD Student Researcher</li>
+            <li><strong>Maksym Melnyk</strong>: PhD Student Researcher</li>
+            <li><strong>Long Lam</strong>: MS Student Researcher (graduated May 2024)</li>
+            <li><strong>Thomas Wojtal</strong>: MS Student Researcher (graduated May 2024)</li>
+            <li><strong>Sydale John Ayi</strong>: MS Student Researcher (graduated May 2025)</li>
+            <li><strong>RenAaron Ellis</strong>: Undergraduate Student Researcher</li>
+          </ul>
+
+          <h3>Graduate Theses</h3>
+          <ul>
+            <li>
+              Long Lam, <em>Low Power Logic Locking using Design Space Modeling to Achieve System-Wide Security</em>, MS Thesis, Rochester Institute of Technology, May 2024.
+              [<a href="https://repository.rit.edu/theses/11722/">RIT Repository</a>]
+            </li>
+            <li>
+              Thomas Wojtal, <em>Adjoining Gates: Mitigating Optical Side-Channel Attacks on Integrated Circuits through Security-Aware Placement</em>, MS Thesis, Rochester Institute of Technology, May 2024.
+              [<a href="https://repository.rit.edu/theses/11725/">RIT Repository</a>]
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="figures">
+        <div class="card">
+          <h2>Project Figures and Experimental Results</h2>
+
+          <h3>DSMLock: Design Space Modeling Framework</h3>
+          <p class="small">
+            DSMLock iteratively samples the locking design space, builds predictive models of design objectives, and identifies locking configurations for designer-specified cost functions.
+          </p>
+
+          <div class="gallery-grid two-col" aria-label="DSMLock Algorithm and Simulation Infrastructure">
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_dsmlockAlgorithm.png"
+                alt="Block diagram of the DSMLock algorithm."
+              />
+              <figcaption>
+                DSMLock algorithm block diagram. The algorithm iteratively samples the locking design space, builds predictive models of power, area, security, and SAT attack runtime, and identifies locking configurations for designer-specified cost functions.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_simInfrastructure.png"
+                alt="Simulation infrastructure for evaluating DSMLock on the RISC-V processor and APRSC communication module benchmarks."
+              />
+              <figcaption>
+                Simulation infrastructure for evaluating DSMLock on the RISC-V processor and APRSC communication module benchmarks. Locked RTL is generated from candidate configurations, power and area are measured using Synopsys Design Compiler, and SAT attack runtime is measured using an open-source SAT attack tool.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-grid two-col" aria-label="DSM Model Visualization and Solution Optimality">
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_dsmModelSll.png"
+                alt="Design space model for the RISC-V ALU locked with SLL."
+              />
+              <figcaption>
+                Design space model for the RISC-V ALU locked with SLL. Red stars are simulated test points demonstrating the model's ability to extrapolate.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_solutionOptimality.png"
+                alt="Solution optimality vs. percent of design space simulated for the DSM-identified locking configuration in a RISC-V ALU."
+              />
+              <figcaption>
+                Solution optimality vs. percent of design space simulated for the DSM-identified locking configuration in a RISC-V ALU. The model identifies a configuration within 96% of the globally optimal solution after simulating less than 3.6% of the design space.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-grid two-col" aria-label="DSMLock Results Tables">
+            <figure>
+              <img
+                src="/images/nsf_dsm_table_riscv.png"
+                alt="Design objectives for RISC-V locking configured by DSMLock vs. three conventional locking approaches."
+              />
+              <figcaption>
+                Design objectives for RISC-V locking configured by DSMLock vs. three conventional approaches (SFLL, CASLock, SLL) under power-focused and area-focused cost functions. DSMLock is the only approach to satisfy all constraints under both cost functions.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/nsf_dsm_table_aprsc.png"
+                alt="Design objectives for APRSC locking configured by DSMLock vs. three conventional locking approaches."
+              />
+              <figcaption>
+                Design objectives for APRSC locking configured by DSMLock vs. three conventional approaches under power-focused and area-focused cost functions. DSMLock is the only approach to satisfy all constraints under both cost functions.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3>RenCTF Workforce Development Platform</h3>
+          <p class="small">
+            RenCTF is an interactive security exhibit deployed in the Kate Gleason Engineering building at RIT. The platform hosts team-based capture-the-flag-style cybersecurity exercises. An AI co-pilot was developed for the platform through NSF Award No. 2344237.
+          </p>
+
+          <div class="gallery-grid two-col" aria-label="RenCTF Hardware Platform">
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_renctf_hw.jpeg"
+                alt="RenCTF hardware platform deployed in the Kate Gleason Engineering building at RIT."
+              />
+              <figcaption>
+                RenCTF hardware platform deployed in the Kate Gleason Engineering building at RIT.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_renctf_hw2.jpg"
+                alt="RenCTF hardware platform with Dr. Zuzak and RenAaron Ellis."
+              />
+              <figcaption>
+                RenCTF hardware platform developed with undergraduate student RenAaron Ellis.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-grid" aria-label="RenCTF Student Portal">
+            <figure>
+              <img
+                src="/images/nsf_dsm_fig_renctfPortal.png"
+                alt="RenCTF student portal showing capture-the-flag exercises and an AI co-pilot interaction."
+              />
+              <figcaption>
+                RenCTF student portal for capture-the-flag-style cybersecurity exercises. An example AI co-pilot interaction is shown on the right.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <strong>Michael Zuzak</strong>, Assistant Professor, Department of Computer Engineering, Rochester Institute of Technology:
+              <a href="mailto:mjzeec@rit.edu">mjzeec@rit.edu</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="acknowledgment">
+        <div class="card">
+          <h2>Acknowledgment</h2>
+
+          <div class="logo-inline" aria-label="NSF Acknowledgment With Logo">
+            <img class="nsf-logo" src="/images/nsf.png" alt="National Science Foundation Logo" />
+            <div>
+              <p style="margin:0 0 8px;">
+                This material is based upon work supported by the National Science Foundation under NSF Award No. #2245573.
+              </p>
+              <p style="margin:0;">
+                Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </div>
-<ul>
-   <li> <a href="https://github.com/RenAaron/RENCTF_PUBLIC"> Open-Source RenCTF Code-Base </a></li>
-</ul>
-<ul>
-   <li> <a href="https://ren-ctf-webapp.web.app/"> Hosted RenCTF Web Application for RIT Students </a></li>
-</ul>
-
-<h2 align="left">Graduate Thesis:</h2>
-
-<h3 align="left">Long Lam:</h3>
-<ul>
-   <li> <a href="https://repository.rit.edu/theses/11722/"> MS Thesis (May 2024) </a></li>
-</ul>
-
-<h3 align="left">Thomas Wojtal:</h3>
-<ul>
-   <li> <a href="https://repository.rit.edu/theses/11725/"> MS Thesis (May 2024) </a></li>
-</ul>
-
-
-<h2 align="left">Thank you to our sponsor!</h2>
-
-<div class="outer-grid">
-	<div class="inner-grid">
-			<img src="/images/nsf.png"/>
-	</div>
-</div>
-
-
